@@ -28,8 +28,8 @@ public class TestClass {
 		System.out.println(p.toString()); // call toString from the Software class
 
 		Product p2 = new Book();
-		Class c = p2.getClass();
-		System.out.println(c.getName());
+		Class<? extends Product> c = p2.getClass();
+		System.out.println("Class name = " + c.getName());
 
 	}
 
